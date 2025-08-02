@@ -1,9 +1,17 @@
+@font-face {
+    font-family: Karwad;
+    src: url(/assets/Fonts/Mj_Karwad_0.ttf);
+}
+body{
+    font-family: Karwad;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
+/* Class Based Styles */
 .mt_1{
     margin-top: 1rem;
 }
@@ -86,6 +94,7 @@
     align-items: center;
     gap: 2rem;
     color: inherit;
+    cursor: pointer;
 }
 .discount{
     position: absolute;
@@ -100,6 +109,7 @@
     width: 100%;
 }
 strong{
+    font-family: inherit;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -115,4 +125,76 @@ strong{
 .fruitsBanner img{
     width: 95%;
     margin-left: 1.5rem;
+}
+/* Product Introduction Styles */
+.titleIntroduction{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.titleIntroduction h3{
+    font-size: 2rem;
+    color: #0A490A;
+}
+.productItem{
+    position: relative;
+    width: 20%;
+    border-radius: 1rem;
+    overflow: hidden;
+    color: white;
+}
+.productImg{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.productInformation{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    padding: 0.5rem;
+    z-index: 1;
+}
+.productInformation h4{
+    color: #FFC107;
+}
+.productInformation p{
+    font-size: 0.7rem;
+}
+.productInformation img , .productBtn img{
+    width: 0.5rem;
+}
+.productInformation button , .productBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC107;
+    gap: 1.5rem;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    color: #0A490A;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+}
+.productsSection{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.productCover{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    width: 100%;
+    height: 97%;
+    transition: all 2s;
+}
+.productItem:hover .productCover{
+    background-color: rgba(0, 0, 0, 0.1);
 }
