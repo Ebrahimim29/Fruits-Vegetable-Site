@@ -2,7 +2,7 @@
     font-family: Karwad;
     src: url(/assets/Fonts/Mj_Karwad_0.ttf);
 }
-body{
+body{ 
     font-family: Karwad;
 }
 *{
@@ -13,8 +13,104 @@ body{
 }
 /* Class Based Styles */
 .mt_1{
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
+.text_green{
+    color: green;
+}
+.text_yellow{
+    color: #FFC107;
+}
+.p_relative{
+    position: relative;
+}
+.p_absolute{
+    position: absolute;
+}
+.d_flex{
+    display: flex;
+}
+.rounded_2{
+    border-radius: 1rem;
+}
+.w_100{
+    width: 100%;
+}
+.w_25{
+    width: 25%;
+}
+.w_80{
+    width: 80%;
+}
+.W_60{
+    width: 60%;
+}
+.p_h_center{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.border_green{
+    border: 2px solid #0A490A;
+}
+.border_white{
+    border: 2px solid #fff;
+}
+.p_1{
+    padding: 0.5rem;
+}
+.p_2{
+    padding: 1rem;
+}
+.text_center{
+    text-align: center;
+}
+.left_1{
+    left:0.5rem
+}
+.left_2{
+    left:1rem;
+}
+.right_1{
+    right: 0.5rem;
+}
+.right_2{
+    right: 1rem;
+}
+.align_items_center{
+    align-items: center;
+}
+.justify_content_space{
+    justify-content: space-between;
+}
+.flex_direction_column{
+    flex-direction: column;
+}
+.gap_1{
+    gap: 0.5rem;
+}
+.gap_2{
+    gap:1rem;
+}
+.text_1{
+    font-size: 0.5rem
+}
+.text_2{
+    font-size: 1rem;
+}
+.text_3{
+    font-size: 1.5rem;
+}
+.text_4{
+    font-size: 2rem;
+}
+.text_bold{
+    font-weight: bolder;
+}
+.pointer{
+    cursor: pointer;
+}
+
 .navbar{
     background-color: #0A490A;
     display: flex;
