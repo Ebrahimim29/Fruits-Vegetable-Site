@@ -12,9 +12,16 @@ body{
 
 }
 /* Class Based Styles */
-.mt_1{
-    margin-top: 0.5rem;
+.mt_5{
+    margin-top: 4rem;
 }
+.mt_2{
+    margin-top: 1rem;
+}
+.mt_1{
+    margin-top: 0.5rem !important;
+}
+
 .text_green{
     color: green;
 }
@@ -29,6 +36,9 @@ body{
 }
 .d_flex{
     display: flex;
+}
+.rounded_1{
+    border-radius: 0.5rem;
 }
 .rounded_2{
     border-radius: 1rem;
@@ -65,11 +75,23 @@ body{
 .text_center{
     text-align: center;
 }
+.text_white{
+    color: white;
+}
+.top_1{
+    top: 0.5rem;
+}
+.left_0{
+    left: 0 !important;
+}
 .left_1{
     left:0.5rem
 }
 .left_2{
     left:1rem;
+}
+.right_0{
+    right: 0 !important;
 }
 .right_1{
     right: 0.5rem;
@@ -83,8 +105,17 @@ body{
 .justify_content_space{
     justify-content: space-between;
 }
+.justify_content_around{
+    justify-content: space-around;
+}
 .flex_direction_column{
     flex-direction: column;
+}
+.align_items_stretch{
+    align-items: stretch;
+}
+.list_style_none{
+    list-style: none;
 }
 .gap_1{
     gap: 0.5rem;
@@ -109,6 +140,18 @@ body{
 }
 .pointer{
     cursor: pointer;
+}
+.bg_yellow{
+    background-color: #FFC107;
+}
+.bg_green{
+    background-color: #0A490A;
+}
+.vertical_align{
+  vertical-align: baseline; /* یا middle / bottom */
+}
+.click:focus{
+    color: aqua;
 }
 
 .navbar{
