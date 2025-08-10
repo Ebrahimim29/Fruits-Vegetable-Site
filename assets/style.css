@@ -58,10 +58,17 @@ body{
 .w_60{
     width: 60%;
 }
+.w_40{
+    width: 40%;
+}
+.w_30{
+    width: 30%;
+}
 .p_h_center{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    color: #0A490A;
 }
 .border_green{
     border: 2px solid #0A490A;
@@ -80,6 +87,9 @@ body{
 }
 .text_center{
     text-align: center;
+}
+.text_justify{
+    text-align: justify;
 }
 .text_white{
     color: white;
@@ -135,17 +145,20 @@ body{
 .gap_3{
     gap: 2rem;
 }
+.gap_4{
+    gap: 3rem;
+}
 .text_1{
-    font-size: 0.5rem
+    font-size: 1rem
 }
 .text_2{
-    font-size: 1rem;
-}
-.text_3{
     font-size: 1.5rem;
 }
-.text_4{
+.text_3{
     font-size: 2rem;
+}
+.text_4{
+    font-size: 2.5rem;
 }
 .text_bold{
     font-weight: bolder;
@@ -386,4 +399,38 @@ strong{
 }
 .mainBannerBoxRight{
     background: url(/assets/Image/17.png) center/cover no-repeat , rgba(0, 0, 0, 0.464);
+}
+
+/* Opinions and Comments Style */
+.p_inline_3{
+    padding-inline: 1.5rem;
+}
+.arrowIcon{
+    width: 1rem;
+    background-color: #0A490A;
+}
+
+/* Scroll to Top Button Styles*/
+.topScroll{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    color: #0A490A;
+    opacity: 30%;
+    transition: all 1s;
+    outline: 2px solid #003500;
+    outline-offset: 2px;
+    font-size: 1.5rem;
+}
+.topScroll:hover{
+    opacity: 100%;
+    box-shadow: 0 0 1rem #003500;
+    background-color: aqua;
+    color: white;
 }
