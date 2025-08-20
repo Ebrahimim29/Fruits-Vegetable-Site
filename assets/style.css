@@ -49,14 +49,18 @@ body{
 .w_100{
     width: 100%;
 }
-.w_25{
-    width: 25%;
-}
+
 .w_80{
     width: 80%;
 }
+.w_70{
+    width: 70%;
+}
 .w_60{
     width: 60%;
+}
+.w_50{
+    width: 50%;
 }
 .w_40{
     width: 40%;
@@ -69,6 +73,9 @@ body{
 }
 .w_30{
     width: 30%;
+}
+.w_25{
+    width: 25%;
 }
 .w_15{
     width: 15%;
@@ -259,6 +266,29 @@ body{
 }
 .iconBox img{
     transform: scale(0.6);
+}
+
+/* Mobile Menu Style */
+.mobileSection{
+    width: 0;
+    color: white;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #0A490A;
+    transition: all 500ms;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 0;
+}
+.mobileSection:target{
+    width: 80%;
+    padding: 1.5rem;
+    opacity: 100;
 }
 .banner{
     position: relative;
@@ -492,4 +522,54 @@ li{
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+}
+.d_desktop_none{
+    display: none !important;
+}
+
+/* Media Query */
+@media(max-width : 768px){
+    .d_flex{
+        flex-wrap: wrap;
+    }
+
+    .w_15{
+        width: 40%;
+    }
+    .w_25{
+        width: 100%;
+    }
+    .w_33{
+        width: 100%;
+    }
+    .w_50{
+        width: 100%;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .banner{
+        padding: 3rem 2rem;
+    }
+    .discount{
+        left: 70vw !important;
+    }
+    .searchBox{
+        width: 80%;
+    }
+    .searchBox select , .searchBox input{
+        width: 50%;
+    }
+    .mainBannerBoxLeft , .mainBannerBoxRight{
+        width: 100%;
+    }
+    .productItem{
+        width: 100%;
+    }
+    .d_mobile_none{
+        display: none !important;
+    }
+    .d_desktop_none{
+        display: block !important;
+    }
 }

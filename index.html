@@ -16,19 +16,25 @@
     <header id="header">
         <!-- Desktop Navbar Section -->
         <nav class="navbar">
+            <!-- Mobile Menu -->
+            <section class="w_60 d_desktop_none">
+                <a href="#mobileSection">
+                    <img class="w_20" src="/assets/Image/download.png" alt="">
+                </a>
+            </section>
+
             <h3>FOODMART</h3>
 
             <!-- Menu Section -->
-            <ul class="menu">
+            <ul class="menu d_mobile_none">
                 <li>Home</li>
                 <li>Fruit</li>
                 <li>Vegetable</li>
             </ul>
 
             <!-- Search Box Section -->
-            <div class="searchBox">
-                <input type="text" placeholder="    Search products">
-
+            <div class="searchBox d_mobile_none">
+                <input type="text" placeholder="Search products">
                 <select name="" id="">
                     <option value="">All Categories</option>
                     <option value="">Categories1</option>
@@ -82,6 +88,37 @@
 
     <!-- Main Section Start -->
     <main class="container">
+
+        <!-- Mobile Menu Section -->
+        <section id="mobileSection" class="mobileSection">
+            <div class="d_flex justify_content_space">
+                <a href="#">❌</a>
+            </div>
+
+            <!-- Search Box Section -->
+            <div class="searchBox">
+                <input type="text" placeholder="Search products">
+                <select name="" id="">
+                    <option value="">All Categories</option>
+                    <option value="">Categories1</option>
+                    <option value="">Categories2</option>
+                </select>
+                <img src="/assets/Image/🦆 icon _search icon_.png" alt="">
+            </div>
+            <ul class="list_style_none line_height_2 text_2">
+                <li>Home</li>
+                <li>Fruits</li>
+                <li>Vegetable</li>
+            </ul>
+            <!-- Operation Section -->
+            <ul class="list_style_none line_height_2 text_2">
+                <li>Profile</li>
+                <li>Wishlist</li>
+                <li>MyCart</li>
+            </ul>
+        </section>
+
+
         <!-- Product Introduction Section -->
         <section class="productIntroduction">
             <div class="titleIntroduction">
@@ -197,7 +234,7 @@
 
         <!-- Best Sellers Section -->
         <section class="productIntroduction">
-            <div class="titleIntroduction">
+            <div class="titleIntroduction w_70">
                 <h3 class="textTitleInt">Love our Categories</h3>
                 <button class="productBtn">
                     <span>Show more</span>
@@ -205,7 +242,7 @@
                 </button>
             </div>
 
-            <section class="cardSection d_flex justify_content_around gap_2">
+            <section class="cardSection d_flex justify_content_center gap_2 w_70">
                 <div
                     class="cardItem text_green border_green rounded_2 d_flex align_items_center justify_content_space p_2 p_relative w_25 flex_direction_column">
                     <img class="w_100" src="/assets/Image/9.png" alt="">
@@ -366,7 +403,7 @@
                 </button>
             </div>
 
-            <ul class="d_flex justify_content_center gap_2 w_80 list_style_none text_white p_2">
+            <ul class="d_flex gap_2 list_style_none text_white p_2 w_70">
                 <li class="click pointer" tabindex="1">Categories 1</li>
                 <li class="click pointer" tabindex="1">Categories 2</li>
                 <li class="click pointer" tabindex="1">Categories 3</li>
@@ -374,7 +411,7 @@
                 <li class="click pointer" tabindex="1">Categories 5</li>
             </ul>
 
-            <section class="cardSection d_flex justify_content_around gap_2 p_relative">
+            <section class="cardSection d_flex justify_content_center gap_2 w_70">
                 <img class="p_h_center left_m1" src="/assets/Image/Vector (Left).png" alt="">
                 <img class="p_h_center right_m1" src="/assets/Image/Vector (Right).png" alt="">
                 <div
@@ -518,7 +555,7 @@
                     </div>
                     <span class="heart p_absolute text_4 top_1 right_2">&#9825;</span>
                 </div>
-                part76 6:00
+
 
             </section>
 
@@ -616,15 +653,18 @@
 
         <!-- Opinion and Comments -->
         <section class="d_flex justify_content_center align_items_center gap_4 mt_5 p_3 text_green">
-            <div class="w_40 p_inline_3">
-                <h1 class="text_4 mt_1">Categories</h1>
-                <p class="text_2 mt_1 text_justify">These superfoods are packed with vital nutrients, including vitamins
-                    and minerals that can help keep you health. Plus, they’re easy to
-                    enjoy-just add water and let the magic happen</p>
-                <button class="btnBanner bg_yellow mt_1 text_green">
-                    <span>View More</span>
-                    <span> > </span>
-                </button>
+            <div class="d_flex justify_content_center w_70 align_item_center gap_4">
+                <div class="w_50">
+                    <h1 class="text_4 mt_1">Opinions and comments</h1>
+                    <p class="text_2 mt_1 text_justify">These superfoods are packed with vital nutrients, including
+                        vitamins
+                        and minerals that can help keep you health. Plus, they’re easy to
+                        enjoy-just add water and let the magic happen</p>
+                    <button class="btnBanner bg_yellow mt_1 text_green">
+                        <span>View More</span>
+                        <span> > </span>
+                    </button>
+                </div>
             </div>
 
             <div class="w_40 d_flex gap_3">
@@ -705,7 +745,7 @@
                         <button class="w_80 bg_yellow text_2 d_flex gap_3 rounded_1 p_1 justify_content_center">
                             <span>Read More</span>
                             <img src="/assets/Image/Vector.png" alt="">
-                        </button>                        
+                        </button>
                     </div>
                 </div>
                 <div class="articleBox bg_white w_33 rounded_1">
@@ -718,7 +758,7 @@
                         <button class="w_80 bg_yellow text_2 d_flex gap_3 rounded_1 p_1 justify_content_center">
                             <span>Read More</span>
                             <img src="/assets/Image/Vector.png" alt="">
-                        </button>                        
+                        </button>
                     </div>
                 </div>
                 <div class="articleBox bg_white w_33 rounded_1">
@@ -731,7 +771,7 @@
                         <button class="w_80 bg_yellow text_2 d_flex gap_3 rounded_1 p_1 justify_content_center">
                             <span>Read More</span>
                             <img src="/assets/Image/Vector.png" alt="">
-                        </button>                        
+                        </button>
                     </div>
                 </div>
             </div>
@@ -744,23 +784,31 @@
             <div class="w_35">
                 <h3 class="text_yellow">Foodmart</h3>
                 <p class="mt_2">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, recusandae rerum consectetur sapiente iure voluptatum ipsam accusantium placeat natus vitae, suscipit laudantium minus perferendis debitis numquam dicta sit odio eos iusto repellendus consequatur id a ipsum reprehenderit! Impedit, quos modi?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, recusandae rerum consectetur sapiente
+                    iure voluptatum ipsam accusantium placeat natus vitae, suscipit laudantium minus perferendis debitis
+                    numquam dicta sit odio eos iusto repellendus consequatur id a ipsum reprehenderit! Impedit, quos
+                    modi?
                 </p>
             </div>
 
             <ul class="w_15 list_style_none line_height_2">
-                <li><h5>Navigation</h5></li>
+                <li>
+                    <h5>Navigation</h5>
+                </li>
                 <li class="mt_2">search</li>
                 <li>categories</li>
                 <li>my Cart</li>
                 <li>wishlist</li>
             </ul>
-            
+
             <div class="w_35">
                 <h3>Footmart</h3>
-                <p class="mt_2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem sit porro culpa perspiciatis consequuntur, veniam, eaque error aspernatur rerum voluptatem facere? Ut dignissimos rerum tempore voluptatibus in. Iusto voluptatem, ab repudiandae omnis</p>
+                <p class="mt_2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem sit porro culpa
+                    perspiciatis consequuntur, veniam, eaque error aspernatur rerum voluptatem facere? Ut dignissimos
+                    rerum tempore voluptatibus in. Iusto voluptatem, ab repudiandae omnis</p>
                 <div class="emailbox border_white d_flex">
-                    <input type="email" class="border_none bg_transparent w_80 text_center" placeholder="Enter email address...">
+                    <input type="email" class="border_none bg_transparent w_80 text_center"
+                        placeholder="Enter email address...">
                     <a href="#" class="bg_yellow p_inline_1 text_3 text_green pointer">→</a>
                 </div>
             </div>
